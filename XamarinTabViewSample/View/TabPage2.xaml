@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             IconImageSource="icon.png"
+             Title="Tab 2"
+             x:Class="XamarinTabViewSample.View.TabPage2">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="5">
+            
+            <Frame BorderColor="Gray" CornerRadius="5" Margin="10">
+                <StackLayout Padding="10">
+                    <Label Text="Another Card" FontSize="Title" />
+                    <Label Text="This is another static card." />
+                </StackLayout>
+            </Frame>
+            
+            <Frame BorderColor="Gray" CornerRadius="5" Margin="10">
+                <StackLayout Padding="10">
+                    <Label Text="Card Title" FontSize="Title" />
+                    <Label Text="This is a static card." />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

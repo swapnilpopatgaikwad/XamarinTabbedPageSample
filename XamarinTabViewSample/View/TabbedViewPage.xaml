@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:CustomTabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        xmlns:local="clr-namespace:XamarinTabViewSample.Model"
+                        xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+                        android:TabbedPage.IsSwipePagingEnabled="True"
+                        android:TabbedPage.OffscreenPageLimit="1"
+                        android:TabbedPage.ToolbarPlacement="Bottom"
+                        SelectedTabColor="LightGray"
+                        UnselectedTabColor="Black"
+                        BarBackgroundColor="Orange"
+                        Title="Tab Page sample"
+                        TabbedPages="{Binding ContentPages}"
+                        CurrentTabChangedCommand="{Binding TabChangedCommand}"
+                        x:Class="XamarinTabViewSample.View.TabbedViewPage">
+</local:CustomTabbedPage>

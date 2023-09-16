@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             IconImageSource="icon.png"
+             Title="Tab 4"
+             x:Class="XamarinTabViewSample.View.TabPage4">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="User Information" FontSize="Title" HorizontalOptions="CenterAndExpand" Margin="10,20,10,0" />
+
+            <Entry Placeholder="First Name" Margin="10,20,10,0" />
+            <Entry Placeholder="Last Name" Margin="10,10,10,0" />
+            <Entry Placeholder="Email" Margin="10,10,10,0" Keyboard="Email" />
+            <Entry Placeholder="Phone Number" Margin="10,10,10,0" Keyboard="Telephone" />
+
+            <Label Text="Gender" FontSize="Subtitle" Margin="10,20,10,0" />
+            <Picker Title="Select Gender" Margin="10,0,10,0">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                        <x:String>Other</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Date of Birth" FontSize="Subtitle" Margin="10,10,10,0" />
+            <DatePicker Margin="10,0,10,0" />
+
+            <Button Text="Save" Clicked="OnSaveButtonClicked" Margin="10,20,10,0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
